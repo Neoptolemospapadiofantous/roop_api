@@ -37,7 +37,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'corsheaders',
     'roop',
     'rest_framework',
 ]
@@ -50,13 +49,10 @@ MIDDLEWARE = [
     'django.contrib.auth.middleware.AuthenticationMiddleware',
     'django.contrib.messages.middleware.MessageMiddleware',
     'django.middleware.clickjacking.XFrameOptionsMiddleware',
-    "corsheaders.middleware.CorsMiddleware",
 ]
 
 
 ROOT_URLCONF = 'roop_api.urls'
-
-CORS_ALLOW_ALL_ORIGINS: True
 
 TEMPLATES = [
     {
@@ -128,10 +124,3 @@ STATIC_URL = 'static/'
 # https://docs.djangoproject.com/en/4.2/ref/settings/#default-auto-field
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
-
-
-# # Cors Settings
-# CORS_ALLOWED_ORIGINS = [
-#     "http://127.0.0.1:8000",  # Example: Your local development server
-#     "https://40b5b6-3.myshopify.com",
-# ]
