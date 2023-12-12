@@ -1,5 +1,5 @@
 """
-URL configuration for django_api project.
+URL configuration for roop_api project.
 
 The `urlpatterns` list routes URLs to views. For more information please see:
     https://docs.djangoproject.com/en/4.2/topics/http/urls/
@@ -19,6 +19,7 @@ from django.urls import include, path
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path('api/', include('app.api.urls')),  # Adjust this line to match your app's actual structure
+    # Adjust this line to match your app's actual structure
+    path('api/', include('app.api.urls')),
 
 ]
